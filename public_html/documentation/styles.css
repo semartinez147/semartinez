@@ -1,0 +1,77 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin-left: 5%;
+    position: relative;
+}
+
+#layout {
+    display: grid;
+    height: min-content;
+    width: auto;
+    max-width: 80em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+            "a b1 b2 b2 ."
+            "a c d e f"
+            "a c d e f"
+            "a c d e f";
+    grid-gap: 5px;
+}
+
+#layout > * {
+    padding: 0 8px;
+
+}
+.summary {
+    background-color: lightsteelblue;
+}
+
+.detail {
+    background-color: lightgray;
+}
+
+.title {
+    display: block;
+    width: available;
+}
+
+.list {
+    display: block;
+    padding-left: 1em;
+}
+#writeup {
+    border: 2px solid lightsteelblue;
+    padding: 0 8px;
+    max-width: 65em;
+}
+
+#portrait {
+    width: border-box;
+    padding: 0;
+    grid-area: a;
+}
+#portrait > img {
+    height: 400px;
+}
+
+#name {
+    grid-area: b1;
+}
+#role {
+    grid-area: b2;
+    width: available;
+}
+
+.detail {
+    margin-top: 20px;
+}
+
+#details {
+    grid-area: c;
+}
+#frustrations {
+    grid-area: d;
+}
+#needs{
+    grid-area: e;
+}
