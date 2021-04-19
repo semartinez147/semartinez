@@ -1,15 +1,41 @@
 body {
     font-family: Calibri, sans-serif;
-    margin-left: 5%;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: min-content min-content 1fr
 }
 
+h1 {
+    height: border-box;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.list {
+    display: block;
+    padding-left: 1em;
+}
+
+#writeup {
+    border: 2px solid lightsteelblue;
+    padding: 0 8px;
+    max-width: 65em;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#persona {
+    grid-column: 2;
+    grid-row: 3;
+}
 #layout {
-    display: grid;
     height: min-content;
-    width: auto;
-    max-width: 80em;
-    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content 1fr 1fr 1fr;
     grid-template-areas:
             "a b1 b2 b2 ."
             "a c d e f"
@@ -22,6 +48,7 @@ body {
     padding: 0 8px;
 
 }
+
 .summary {
     background-color: lightsteelblue;
 }
@@ -35,16 +62,6 @@ body {
     width: available;
 }
 
-.list {
-    display: block;
-    padding-left: 1em;
-}
-#writeup {
-    border: 2px solid lightsteelblue;
-    padding: 0 8px;
-    max-width: 65em;
-}
-
 #portrait {
     width: border-box;
     padding: 0;
@@ -56,10 +73,18 @@ body {
 
 #name {
     grid-area: b1;
+    height: border-box;
+    justify-content: center;
 }
+
+.summary h2 {
+    text-align: center;
+}
+
 #role {
     grid-area: b2;
     width: available;
+    height: border-box;
 }
 
 .detail {
