@@ -20,12 +20,13 @@ h1 {
 #writeup {
     border: 2px solid lightsteelblue;
     padding: 0 8px;
-    max-width: 65em;
+    width: 65em;
     grid-column: 2;
     grid-row: 2;
 }
 
 #persona {
+    min-width: 45em;
     grid-column: 2;
     grid-row: 3;
 }
