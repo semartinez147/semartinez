@@ -26,6 +26,7 @@ h1 {
 }
 
 #persona {
+    margin-top: 4em;
     min-width: 45em;
     grid-column: 2;
     grid-row: 3;
@@ -35,14 +36,14 @@ h1 {
     grid-column: 1;
     grid-row: 3;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: min-content 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content min-content 1fr 1fr;
     grid-template-areas:
-            "a b1 b2 b2 ."
-            "a c d e f"
-            "a c d e f"
-            "a c d e f";
-    grid-gap: 5px;
+            "a2 b1 b2 b2 ."
+            "a c c c c"
+            "a d e f g"
+            "a d e f g";
+    grid-gap: 0.5em;
 }
 
 #layout > * {
@@ -62,10 +63,18 @@ h1 {
     display: block;
     width: available;
 }
-
+#p-title {
+    border: 2px solid lightsteelblue;
+    grid-area: a2;
+    height: max-content;
+    text-align: center;
+}
 #portrait {
     width: border-box;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: a;
 }
 #portrait > img {
@@ -88,16 +97,19 @@ h1 {
     height: border-box;
 }
 
-.detail {
-    margin-top: 20px;
+#technology {
+    grid-area: c;
 }
 
 #details {
-    grid-area: c;
-}
-#frustrations {
     grid-area: d;
 }
 #needs{
     grid-area: e;
+}
+#frustrations {
+    grid-area: f;
+}
+#story {
+    grid-area: g;
 }
