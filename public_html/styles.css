@@ -1,3 +1,13 @@
 #headshot {
     max-width: 250px;
 }
+
+#card-overlay {
+    height: min-content;
+    opacity: 85%;
+}
+
+#front-card {
+    max-height: 16em;
+    overflow: hidden;
+}
