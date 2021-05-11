@@ -1,3 +1,8 @@
+/*#welcome {*/
+/*    background-image: url("./assets/cranes-banner.jpg");*/
+/*    background-position: center;*/
+/*}*/
+
 #headshot {
     max-width: 250px;
 }
@@ -12,7 +17,7 @@ div[id*="front-end"] {
     margin: 2em 0;
 }
 
-#front-card {
+div[id*="front-card"] {
     max-height: 16em;
     overflow: hidden;
 }

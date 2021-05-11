@@ -38,33 +38,27 @@
 	</nav> <!--navbar-->
 
 	<section>
-		<div class="container">
-			<div class="row justify-content-center mb-2">
-				<div class="d-flex align-items-center col-md-4 my-auto" id="headshot">
-					<img src="assets/headshot.jpg" alt="headshot of Samuel" class="img-fluid rounded" id="crane-banner">
+		<div class="container-fluid" id="welcome">
+			<div class="row my-1 text-center">
+				<h2 class="display-4">Samuel E Martinez</h2>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-6 col-lg-4 order-2 order-lg-2"><p>I’m a software and web developer with a background in leadership, development and end user support. I am proficient with Java in a wide variety of use cases, and actively expanding my development skills in HTML, CSS, Javascript, Bootstrap, React and others.</p></div>
+				<div class="col-lg-4 mx-auto my-2 order-0 order-lg-3" id="headshot">
+					<img src="assets/headshot.jpg" alt="headshot of Samuel" class="img-fluid rounded-circle" id="headshot-img">
 				</div>
-
-
-				<div class="container col-md-7" id="welcome">
-					<h2>About Samuel</h2>
-
-					<div class="row">
-						<p class="col">I’m a software and web developer with a background in leadership, development and
-							end user support. I am proficient with Java in a wide variety of use cases, and actively
-							expanding my development skills in HTML, CSS, Javascript, Bootstrap, React and others.</p>
-						<p class="col"> I have experience with individual, group and leadership roles and a reputation
-							for building positive culture and inspiring collaboration through service leadership,
-							effective teamwork, and strong communication skills.</p></div>
-				</div>
+				<div class="w-100 order-1 d-block d-lg-none"></div>
+				<p class="col-6 col-lg-4 order-3"> I have experience with individual, group and leadership roles and a reputation for building positive culture and inspiring collaboration through service leadership, effective teamwork, and strong communication skills.</p>
 			</div>
 		</div>
 	</section> <!--welcome-->
 
-	<section>
-<!--	px-0 on outer-most div and card-img-overlay necessary for full bleed	-->
+	<section class="bg-secondary pt-1">
+		<!--	px-0 on outer-most div and card-img-overlay necessary for full bleed	-->
 		<div class="container-fluid px-0" id="front-end1">
 			<div class="card bg-dark text-white rounded-0 border-0 g-0 mx-0" id="front-card1">
-				<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+				<img src="assets/mesa.jpg" class="card-img rounded-0 img-fluid"
+				     alt="background image: pile of origami cranes">
 				<div class="card-img-overlay px-0 row justify-content-center">
 					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay"><h5
 							class="card-title">Front-end portfolio</h5>
@@ -77,11 +71,18 @@
 		</div>
 		<div class="container-fluid px-0" id="front-end-lit">
 			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card2">
-				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid"
+				     alt="background image: pile of origami cranes">
 				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay2"><h5
-							class="card-title">JavaScript Event Handling</h5>
-						<p class="card-text mb-2">This page uses event listeners to trigger HTML changes based on user actions.</p></div>
+
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay2">
+						<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html"
+						   class="link-light">
+							<h5 class="card-title">JavaScript Event Handling</h5>
+							<p class="card-text mb-2">This page uses event listeners to trigger HTML changes based on
+								user actions.</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -193,7 +194,6 @@
 		</div>
 	</div> <!--experience-->
 
-	</div>
 	<div class="container" id="contact">
 		<h2>Contact me</h2>
 		<p>This section will contain a simple contact form, my professional email address, and additional links to my
