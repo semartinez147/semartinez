@@ -2,9 +2,14 @@
     max-width: 250px;
 }
 
-#card-overlay {
+/*Selects all div with IDs that contain "card overlay"*/
+div[id*="card-overlay"] {
     height: min-content;
     opacity: 85%;
+}
+
+div[id*="front-end"] {
+    margin: 2em 0;
 }
 
 #front-card {

@@ -61,11 +61,35 @@
 	</section> <!--welcome-->
 
 	<section>
-		<div class="container-fluid" id="front-end">
-			<div class="card bg-dark text-white g-0 mx-0" id="front-card">
+<!--	px-0 on outer-most div and card-img-overlay necessary for full bleed	-->
+		<div class="container-fluid px-0" id="front-end1">
+			<div class="card bg-dark text-white rounded-0 border-0 g-0 mx-0" id="front-card1">
+				<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+				<div class="card-img-overlay px-0 row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay"><h5
+							class="card-title">Front-end portfolio</h5>
+						<p class="card-text mb-2">I wanted this to be an image carousel containing 4-6 examples of my
+							best work, but I've been informed carousels are a bit gauche, especially in mobile-first
+							development. In any case, tapping each image will expand detail modals including my specific
+							contributions and the technology used.</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid px-0" id="front-end-lit">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card2">
+				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+				<div class="card-img-overlay row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay2"><h5
+							class="card-title">JavaScript Event Handling</h5>
+						<p class="card-text mb-2">This page uses event listeners to trigger HTML changes based on user actions.</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="front-end3">
+			<div class="card bg-dark text-white g-0 mx-0" id="front-card3">
 				<img src="assets/cranes.jpg" class="card-img img-fluid" alt="background image: pile of origami cranes">
 				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay"><h5
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay3"><h5
 							class="card-title">Front-end portfolio</h5>
 						<p class="card-text mb-2">I wanted this to be an image carousel containing 4-6 examples of my
 							best work, but I've been informed carousels are a bit gauche, especially in mobile-first
