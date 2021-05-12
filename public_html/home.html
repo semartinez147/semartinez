@@ -9,6 +9,7 @@
 	      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" href="./assets/favicon.ico">
 	<title>S E Martinez</title>
 </head>
 <body>
@@ -67,39 +68,38 @@
 							class="card-title">Frontend portfolio</h5>
 						<p class="card-text mb-2">I wanted this to be an image carousel containing 4-6 examples of my
 							best work, but I've been informed carousels are a bit gauche, especially in mobile-first
-							development. In any case, tapping each image will expand detail modals including my specific
-							contributions and the technology used.</p></div>
+							development. In any case, clicking each image opens the page in a new tab.</p></div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid px-0" id="frontend-lit">
-			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card2">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-lit">
 				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid"
 				     alt="background image: blurred snippet from the linked page">
 				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay2">
-						<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html"
-						   class="link-light">
-							<h5 class="card-title">Event Handling</h5>
-							<p class="card-text mb-2">This page uses JavaScript event listeners to manipulate text based on user actions (designed for desktop).</p>
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-lit">
+						<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank"
+						   class="link-light text-decoration-none">
+							<h5 class="card-title text-center">Event Handling</h5>
+							<p class="card-text mb-2">This page uses JavaScript event listeners to change the DOM based on user actions.  I added listeners for drag-and-drop, mousewheel, scroll and button click events. There is additional JavaScript code to generate random colors and mutate individual sentences (designed for desktop).</p>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid" id="frontend3">
-			<div class="card bg-dark text-white g-0 mx-0" id="front-card3">
-				<img src="assets/murray.jpg" class="card-img img-fluid" alt="background image: blurred snippet from the linked page">
+		<div class="container-fluid px-0" id="frontend-boot">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-boot">
+				<img src="assets/murray.jpg" class="card-img rounded-0 img-fluid" alt="background image: blurred snippet from the linked page">
 				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay3"><h5
-							class="card-title">Bootstrap Demo</h5>
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-boot"><h5
+							class="card-title text-center">Bootstrap Demo</h5>
 						<p class="card-text mb-2">This is a simple Bootstrap page showing some basic components and responsive design practices.</p></div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid" id="frontend4">
-			<div class="card bg-dark text-white g-0 mx-0" id="front-card4">
-				<img src="assets/cranes.jpg" class="card-img img-fluid" alt="background image: pile of origami cranes">
+		<div class="container-fluid px-0" id="frontend4">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card4">
+				<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
 				<div class="card-img-overlay row justify-content-center">
 					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay4"><h5
 							class="card-title">Frontend Portfolio Item</h5>
@@ -107,39 +107,102 @@
 				</div>
 			</div>
 		</div>
-	</section> <!--front end-->
+	</section> <!--frontend-->
 
-	<div class="container" id="backend">
+	<div class="container bg-warning" id="backend">
 		<h2>Backend portfolio</h2>
 		<p><!--TODO-->I need to research what a Java portfolio should look like. My current concept is a grid of Bootstrap cards with a thumbnail and/or brief description, which expand on click to show relevant details.</p>
-		<p>I think I'll either need to build a few more projects, or pick specific *useful* elements to highlight. This section may work better as a carousel showing code snippets.</p>
-	</div>
+		<p>I think I'll either need to build a few more projects, or pick specific *useful* elements to highlight. This section may also work as a carousel showing code snippets.</p>
+	</div> <!--backend-->
 
-	<div class="container" id="experience">
-		<h2>Skills & Recent Experiences</h2>
-		<div class="container">
-			<h3>Deep Dive Coding</h3>
-			<p><!--TODO-->This is being updated with Fullstack info.</p>
-			<p>I started learning Java in January 2020. I was confident that I would at least enjoy coding - it puts a lot of the interests that drive my hobbies to work together - but I was surprised to find how engrossing the process is for me. I picked the basics up very quickly, pushed myself with exercises on CodingBat, and within a few weeks I was helping my classmates when our instructors were busy. I organized weekly study sessions at the CNM library and created a collaborative learning community to support all of us.</p>
+	<div class="container-fluid" id="experience">
+<div class="row">
+	<div class="col-2 pe-0" id="skill-list">
+		<h2 class="container-fluid py-0 border-end border-top border-2 border-secondary text-end">Skills</h2>
+		<div class="container-fluid ps-1 border-start border-2 border-secondary">
+    	<p>Tech</p>
+    	<ul class="list-unstyled">
+    		<li>HTML5/CSS</li>
+    		<li>Bootstrap4.6/5.0</li>
+    		<li>JavaScript</li>
+    		<ul class="sublist">
+    			<li>DOM manipulation</li>
+    			<li>React</li>
+    			<li>React-Bootstrap</li>
+    			<li>Node.js</li>
+    		</ul>
+    		<li>MySQL/SQLite</li>
+    		<li>Git/GitHub</li>
+    		<li>Asana</li>
+    		<li>Java</li>
+    		<ul class="sublist">
+    			<li>Gradle</li>
+    			<li>Maven</li>
+    			<li>REST via Spring</li>
+    			<li>Android</li>
+    			<ul class="sublist">
+    				<li>Jetpack</li>
+    				<li>ReactiveX</li>
+    				<li>Room</li>
+    			</ul>
+    			<li>Unit Testing</li>
+    			<li>Debugging</li>
+    		</ul>
+    </ul>
+</div>
 
-			<p>Thanks to Deep Dive, I am proficient with IntelliJ IDE and Java SE 8+. I have experience with JUnit4 and 5 testing , relational database design using MySQL queries, RESTful services, Android ViewModel architecture incorporating ReactiveX tasks, and more, which you can examine above. I am also familiar with Scrum and Agile development methods.</p>
+<div class="container-fluid border-end border-2 border-secondary">
+    	<p>Project Work</p>
+    	<ul class="list-unstyled">
+    		<li>Entity Relationship Diagramming</li>
+    		<li>Wireframing</li>
+    		<li>Agile Development</li>
+    		<li>Remote Collaboration</li>
+    		<li>Iterative Design</li>
+    	</ul>
+</div>
+	
+<div class="container-fluid border-start border-bottom border-2 border-secondary">
+    	<p>Personal</p>
+    	<ul class="list-unstyled">
+    		<li>Critical & Creative Thinking</li>
+    		<li>Attention to Detail</li>
+    		<li>Self-guided Learning</li>
+    		<li>Service Leadership</li>
+    	</ul>
+</div>
+</div>
+<div class="col">
+	<h2 class="container-fluid">Experiences</h2>
 
-			<p>COVID-19 gave me a crash course in remote work. I led my team in daily check-ins and planning calls, and managed our workflow by creating an Asana project to organize ideas and assign tasks. We leaned hard into the use of GitHub branches. Without my instructors in the next room to answer questions, I did a lot of independent research to fix bugs and work out implementations.</p>
+	<div class="container ms-4">
+        			<h3>Deep Dive Coding</h3>
+        			<p><!--TODO-->This is being updated with Fullstack info.</p>
+        			<p>I started learning Java in January 2020. I was confident that I would at least enjoy coding - it puts a lot of the interests that drive my hobbies to work together - but I was surprised to find how engrossing the process is for me. I picked the basics up very quickly, pushed myself with exercises on CodingBat, and within a few weeks I was helping my classmates when our instructors were busy. I organized weekly study sessions at the CNM library and created a collaborative learning community to support all of us.</p>
 
-			<p>I've continued to develop my personal Java project: Choppit is at the stage of minimum viability as an Android app that scrapes HTML and generates simplified recipes with no ads, videos, life stories, etc.</p>
+        			<p>Thanks to Deep Dive, I am proficient with IntelliJ IDE and Java SE 8+. I have experience with JUnit4 and 5 testing , relational database design using MySQL queries, RESTful services, Android ViewModel architecture incorporating ReactiveX tasks, and more, which you can examine above. I am also familiar with Scrum and Agile development methods.</p>
 
-			<p>In April of 2021 I decided to go back for round two at Deep Dive; I'm currently working through a fully remote session of the Fullstack web development program. I've enjoyed adding JavaScript to Java and working with frontend systems like React.js. I've gotten much more comfortable with the minutiae of tools Slack, Git and Asana.</p>
-		</div>
-		<div class="container">
-			<h3>Verizon Wireless</h3>
-			<p>I worked at a Verizon Wireless call center from 2010 to 2018. The majority of my experience is in tech support; the Albuquerque center was among the first to support complex services like international roaming, home/mobile internet devices, and network extenders (micro cell towers that connect to the Verizon network through a wired internet connection) on top of all the changes in cell phone technology over the last decade. I saw each of these as an opportunity to develop expertise with each new set of procedures, challenges and work-arounds as fast as possible.</p>
+        			<p>COVID-19 gave me a crash course in remote work. I led my team in daily check-ins and planning calls, and managed our workflow by creating an Asana project to organize ideas and assign tasks. We leaned hard into the use of GitHub branches and learned as we worked. Without my instructors in the next room to answer questions, I did a lot of independent research to fix bugs and work out implementations.</p>
 
-			<p>I got my A+ certification to move up in Tech Support, and my Network+ because it looked cool. I prided myself on the ability to guide even the least confident and most tech-phobic customers through their router admin screens to configure DHCP reservations, port forwarding, occasionally even QoS and DMZ settings - without being able to see their computer screen. Through these experiences, I became highly skilled at applying research, documentation and critical thinking to problems. I also perfected the ability to communicate between laypersons and technical experts.</p>
+        			<p>Since then, I've continued to refine my Java skills and develop my personal Android project: Choppit is at the stage of minimum viability as an Android app that scrapes HTML and generates simplified recipes with no ads, videos, life stories, etc.  My remaining design goals are significantly more complex than what I've accomplished, so I'm mostly content to pause development here.</p>
 
-			<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model* guided me in creating and iteratively improving learner-focused training modules for everything from resolving usage disputes to building trust.
-				<br/>
-				*Analysis, Design, Development, Implementation, Evaluation.</p>
-		</div>
+        			<p>In April of 2021 I decided to go back for round two at Deep Dive; I'm currently working through a fully remote session of the Fullstack web development program. I've enjoyed adding JavaScript's functional programming style to Java, and working with frontend systems like CSS Grids and React-Bootstrap is an interesting contrast to Android Fragments. I've gotten much more comfortable with the minutiae of tools Slack, Git and Asana.</p>
+
+			        <p>My next project will be to branch off Choppit mobile and rebuild it as a mini-monolith server app for personal use; a few pages of Bootstrap UI and some JSON should get it to a point where it can be deployed on a desktop computer and accessed locally from any device.</p>
+
+        		</div>
+        		<div class="container ms-4">
+        			<h3>Verizon Wireless</h3>
+        			<p>I worked at a Verizon Wireless call center from 2010 to 2018. The majority of my experience is in tech support; the Albuquerque center was among the first to support complex services like international roaming, home/mobile internet devices, and network extenders (micro cell towers that connect to the Verizon network through a wired internet connection) on top of all the changes in cell phone technology over the last decade. I saw each of these as an opportunity to develop expertise with each new set of procedures, challenges and work-arounds as fast as possible.</p>
+
+        			<p>I got my A+ certification to move up in Tech Support, and my Network+ because it looked cool. I prided myself on the ability to guide even the least confident and most tech-phobic customers through their router admin screens to configure DHCP reservations, port forwarding, occasionally even QoS and DMZ settings - without being able to see their computer screen. Through these experiences, I became highly skilled at applying research, documentation and critical thinking to problems. I also perfected the ability to communicate between laypersons and technical experts.</p>
+
+        			<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model* guided me in creating and iteratively improving learner-focused training modules for everything from resolving usage disputes to building trust.
+        				<br/>
+        				*Analysis, Design, Development, Implementation, Evaluation.</p>
+        		</div>
+</div>
+</div>
 	</div> <!--experience-->
 
 	<div class="container" id="contact">

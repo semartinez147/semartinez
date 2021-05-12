@@ -21,3 +21,10 @@ div[id*="front-card"] {
     max-height: 16em;
     overflow: hidden;
 }
+#skill-list {
+    min-width: 135px;
+}
+.sublist {
+    list-style: "• ";
+    padding-left: 1em;
+}
