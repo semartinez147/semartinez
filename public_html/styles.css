@@ -1,0 +1,30 @@
+/*#welcome {*/
+/*    background-image: url("./assets/cranes-banner.jpg");*/
+/*    background-position: center;*/
+/*}*/
+
+#headshot {
+    max-width: 250px;
+}
+
+/*Selects all div with IDs that contain "card overlay"*/
+div[id*="card-overlay"] {
+    height: min-content;
+    opacity: 85%;
+}
+
+div[id*="frontend"] {
+    margin: 2em 0;
+}
+
+div[id*="front-card"] {
+    max-height: 16em;
+    overflow: hidden;
+}
+#skill-list {
+    min-width: 135px;
+}
+.sublist {
+    list-style: "• ";
+    padding-left: 1em;
+}
