@@ -58,44 +58,15 @@
 		</div>
 	</section> <!--welcome-->
 
-	<section class=" pt-1">
-		<!--	px-0 on outer-most div and card-img-overlay necessary for full bleed	-->
-		<div class="container-fluid px-0" id="frontend1">
-			<div class="card bg-dark text-white rounded-0 border-0 g-0 mx-0" id="front-card1">
-				<img src="assets/mesa.jpg" class="card-img rounded-0 img-fluid"
-				     alt="background image: pile of origami cranes">
-				<div class="card-img-overlay px-0 row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay"><h5
-							class="card-title">Frontend portfolio</h5>
-						<p class="card-text mb-2">I wanted this to be an image carousel containing 4-6 examples of my
-							best work, but I've been informed carousels are a bit gauche, especially in mobile-first
-							development. In any case, clicking each image opens the page in a new tab.</p></div>
-				</div>
-			</div>
-		</div>
-<!--
-		<div class="container-fluid px-0" id="frontend-lit">
-			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-lit">
-				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid"
-				     alt="background image: blurred snippet from the linked page">
-				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-lit">
-						<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank"
-						   class="link-light">
-							<h5 class="card-title text-center text-decoration-none">Event Handling</h5>
-							<p class="card-text text-decoration-none mb-2">This page uses JavaScript event listeners to change the DOM based on user actions. I added listeners for drag-and-drop, mousewheel, scroll and button click events. There is additional JavaScript code to generate random colors and mutate individual sentences (designed for desktop).</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
--->
+	<section class="pt-1" id="frontend">
+		<div class="container text-center"><h5 class="display-4 text-black-50">Work samples</h5></div>
 
-		<div class="container-fluid ms-0 px-0" id="frontend-js">
+
+		<div class="container-fluid px-0 pb-4" id="frontend-js">
 			<div class="card rounded-0 border-0 g-0 mx-0 mb-3">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-start align-items-md-end js-holder">
-						<img src="assets/js-logo.png" alt="JavaScript logo" class="frontend-logo sticky-top">
+					<div class="col-auto d-flex align-items-center p-1">
+						<img src="assets/js-logo.png" alt="JavaScript logo" class="frontend-logo rounded-circle">
 					</div>
 					<div class="col">
 						<div class="card-body">
@@ -104,30 +75,56 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-auto pe-0 pe-sm-1">
-										<a href="https://github.com/semartinez147/js-events-challenge" target="_blank"><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
-									</div>
-									<div class="col-auto">
 										<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
 											<i class="fas fa-globe"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 									</div>
+									<div class="col-auto">
+										<a href="https://github.com/semartinez147/js-events-challenge" target="_blank"><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid ms-0 px-0" id="frontend-bootstrap">
+		<div class="container-fluid px-0 pb-4" id="frontend-bootstrap">
 			<div class="card rounded-0 border-0 g-0 mx-0 mb-3">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-start align-items-md-end bootstrap-holder">
-						<img src="assets/boot-logo.png" alt="Bootstrap logo" class="frontend-logo sticky-top">
+					<div class="col-auto d-flex align-items-center p-1">
+						<img src="assets/boot-logo.png" alt="Bootstrap logo" class="frontend-logo rounded-circle ">
 					</div>
 					<div class="col">
 						<div class="card-body">
 							<h5 class="card-title">Bootstrap Responsive Layout</h5>
-							<p class="card-text">This is a simple Bootstrap page showing some basic components and responsive design practices.</p>
+							<p class="card-text">This is a simple Bootstrap page showing some basic components like the Navbar, Jumbotron and Card Deck.  Responsive design means it will scale and rearrange itself for smaller screens like tablets and smart phones.</p>
+							<div class="container">
+								<div class="row">
+									<div class="col-auto pe-0 pe-sm-1">
+										<a href="https://ddc-web-student.cnm.edu/~smartinez495/bootstrap-challenge/" target="_blank">
+											<i class="fas fa-globe"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
+									</div>
+									<div class="col-auto">
+									<a href=""><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+								</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid px-0 pb-4" id="frontend-react">
+			<div class="card rounded-0 border-0 g-0 mx-0 mb-3">
+				<div class="row g-0">
+					<div class="col-auto d-flex align-items-center p-1">
+						<img src="assets/react-logo.png" alt="Rect logo" class="frontend-logo rounded-circle ">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">React.js Layout</h5>
+							<p class="card-text">A page built in React.js etc etc. (better description of components used)</p>
 							<div class="container">
 								<div class="row">
 									<div class="col-auto pe-0 pe-sm-1">
@@ -139,36 +136,26 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="container-fluid px-0" id="frontend-boot">
-			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-boot">
-				<img src="assets/murray.jpg" class="card-img rounded-0 img-fluid" alt="background image: blurred snippet from the linked page">
-				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-boot"><h5
-							class="card-title text-center">Bootstrap Demo</h5>
-						<p class="card-text mb-2">This is a simple Bootstrap page showing some basic components and responsive design practices.</p></div>
+		<!--
+				<div class="container-fluid px-0" id="frontend4">
+					<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card4">
+						<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+						<div class="card-img-overlay row justify-content-center">
+							<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay4"><h5
+									class="card-title">Frontend Portfolio Item</h5>
+								<p class="card-text mb-2">This will be another example of my front end work.</p></div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container-fluid px-0" id="frontend4">
-			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card4">
-				<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
-				<div class="card-img-overlay row justify-content-center">
-					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay4"><h5
-							class="card-title">Frontend Portfolio Item</h5>
-						<p class="card-text mb-2">This will be another example of my front end work.</p></div>
-				</div>
-			</div>
-		</div>
+		-->
 	</section> <!--frontend-->
 
-	<div class="container bg-warning" id="backend">
+	<div class="container bg-secondary" id="backend">
 		<h2>Backend portfolio</h2>
 		<p><!--TODO-->This will be a collection of Bootstrap card-columns showing snippets of code. I want each card to expand to a modal with more detail and an option to view the file on GitHub.</p>
 		<p>I may need to either build a few more projects, or pick specific useful elements to highlight.</p>
@@ -178,7 +165,7 @@
 		<!--	TODO: This section needs more work to be fully mobile-responsive	-->
 		<div class="row">
 			<div class="col-2 pe-0" id="skill-list">
-				<h2 class="container-fluid py-0 border-end border-top border-2 border-secondary text-end">Skills</h2>
+				<h2 class="container-fluid py-0 border-end border-top border-2 border-secondary text-end text-black-50">Skills</h2>
 				<div class="container-fluid ps-1 border-start border-2 border-secondary">
 					<p>Tech</p>
 					<ul class="list-unstyled">
@@ -233,7 +220,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<h2 class="container-fluid">Experiences</h2>
+				<h2 class="container-fluid text-black-50">Experiences</h2>
 
 				<div class="container ms-4">
 					<h3>Deep Dive Coding</h3>
@@ -267,9 +254,8 @@
 
 	<div class="container" id="contact">
 		<h2>Contact me</h2>
-		<p>This section will contain a simple contact form, my professional email address, and additional links to my
-			professional profiles on LinkedIn and GitHub. (These will also be linked to in the footer site wide via
-			icons.)</p>
+
+
 	</div>
 
 	<!--Bootstrap Javascript files-->

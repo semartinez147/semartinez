@@ -6,6 +6,16 @@
 #headshot {
     max-width: 250px;
 }
+body {
+    background: linear-gradient(rgb(205, 251, 249), rgb(183, 189, 188));
+
+}
+/*#frontend {
+    background-image: url("assets/cranes.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+}*/
 
 /*Selects all div with IDs that contain "card overlay"*/
 div[id*="card-overlay"] {
@@ -21,18 +31,9 @@ div[id*="frontend"] {
     margin: 2em 0;
 }
 
-
 div[id*="front-card"] {
     max-height: 16em;
     overflow: hidden;
-}
-
-.js-holder {
-    background-color: #F0DB4F;
-}
-
-.bootstrap-holder {
-    background-color: #563d7c;
 }
 
 .frontend-logo {
