@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<script src="https://kit.fontawesome.com/f6ea8f3750.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" href="./assets/favicon.ico">
+	<title>S E Martinez</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="assets/logo-black-50.png" id="logo" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			        aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="documentation/milestone-1-bootstrap-5.html">Milestone 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="documentation/milestone-2.html">Milestone 2</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav> <!--navbar-->
+
+	<section>
+		<div class="container-fluid" id="welcome">
+			<div class="row my-1 text-center">
+				<h2 class="display-4">Samuel E Martinez</h2>
+			</div>
+			<div class="row justify-content-center align-items-lg-center">
+				<div class="col-6 col-lg-4 order-2 order-lg-2"><p>I’m a software and web developer with a background in leadership, development and end user support. I am proficient with Java in a wide variety of use cases, and actively expanding my development skills in HTML, CSS, Javascript, Bootstrap, React and others.</p></div>
+				<div class="col-lg-4 mx-1 my-2 order-0 order-lg-3" id="headshot">
+					<img src="assets/headshot.jpg" alt="headshot of Samuel" class="img-fluid rounded-circle" id="headshot-img">
+				</div>
+				<div class="w-100 order-1 d-block d-lg-none"></div>
+				<div class="col-6 col-lg-4 order-3"><p> I have experience with individual, group and leadership roles
+					and a reputation for building
+					positive culture and inspiring collaboration through service leadership, effective teamwork, and
+					strong communication skills.</p></div>
+			</div>
+		</div>
+	</section> <!--welcome-->
+
+	<section class=" pt-1">
+		<!--	px-0 on outer-most div and card-img-overlay necessary for full bleed	-->
+		<div class="container-fluid px-0" id="frontend1">
+			<div class="card bg-dark text-white rounded-0 border-0 g-0 mx-0" id="front-card1">
+				<img src="assets/mesa.jpg" class="card-img rounded-0 img-fluid"
+				     alt="background image: pile of origami cranes">
+				<div class="card-img-overlay px-0 row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay"><h5
+							class="card-title">Frontend portfolio</h5>
+						<p class="card-text mb-2">I wanted this to be an image carousel containing 4-6 examples of my
+							best work, but I've been informed carousels are a bit gauche, especially in mobile-first
+							development. In any case, clicking each image opens the page in a new tab.</p></div>
+				</div>
+			</div>
+		</div>
+<!--
+		<div class="container-fluid px-0" id="frontend-lit">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-lit">
+				<img src="assets/lit.jpg" class="card-img rounded-0 img-fluid"
+				     alt="background image: blurred snippet from the linked page">
+				<div class="card-img-overlay row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-lit">
+						<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank"
+						   class="link-light">
+							<h5 class="card-title text-center text-decoration-none">Event Handling</h5>
+							<p class="card-text text-decoration-none mb-2">This page uses JavaScript event listeners to change the DOM based on user actions. I added listeners for drag-and-drop, mousewheel, scroll and button click events. There is additional JavaScript code to generate random colors and mutate individual sentences (designed for desktop).</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
+
+		<div class="container-fluid ms-0 px-0" id="frontend-js">
+			<div class="card rounded-0 border-0 g-0 mx-0 mb-3">
+				<div class="row g-0">
+					<div class="col-auto d-flex align-items-start align-items-md-end js-holder">
+						<img src="assets/js-logo.png" alt="JavaScript logo" class="frontend-logo sticky-top">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">JavaScript Event Handling</h5>
+							<p class="card-text">This page implements JavaScript event listeners to change the DOM based on user actions. I used listeners for drag-and-drop, mousewheel, scroll and button events. There is additional JavaScript code to generate random colors and mutate individual <code>span</code> elements (designed for desktop).</p>
+							<div class="container">
+								<div class="row">
+									<div class="col-auto pe-0 pe-sm-1">
+										<a href="https://github.com/semartinez147/js-events-challenge" target="_blank"><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+									</div>
+									<div class="col-auto">
+										<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
+											<i class="fas fa-globe"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid ms-0 px-0" id="frontend-bootstrap">
+			<div class="card rounded-0 border-0 g-0 mx-0 mb-3">
+				<div class="row g-0">
+					<div class="col-auto d-flex align-items-start align-items-md-end bootstrap-holder">
+						<img src="assets/boot-logo.png" alt="Bootstrap logo" class="frontend-logo sticky-top">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">Bootstrap Responsive Layout</h5>
+							<p class="card-text">This is a simple Bootstrap page showing some basic components and responsive design practices.</p>
+							<div class="container">
+								<div class="row">
+									<div class="col-auto pe-0 pe-sm-1">
+										<a href=""><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+									</div>
+									<div class="col-auto">
+										<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
+											<i class="fas fa-globe"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid px-0" id="frontend-boot">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card-boot">
+				<img src="assets/murray.jpg" class="card-img rounded-0 img-fluid" alt="background image: blurred snippet from the linked page">
+				<div class="card-img-overlay row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay-boot"><h5
+							class="card-title text-center">Bootstrap Demo</h5>
+						<p class="card-text mb-2">This is a simple Bootstrap page showing some basic components and responsive design practices.</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid px-0" id="frontend4">
+			<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card4">
+				<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
+				<div class="card-img-overlay row justify-content-center">
+					<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay4"><h5
+							class="card-title">Frontend Portfolio Item</h5>
+						<p class="card-text mb-2">This will be another example of my front end work.</p></div>
+				</div>
+			</div>
+		</div>
+	</section> <!--frontend-->
+
+	<div class="container bg-warning" id="backend">
+		<h2>Backend portfolio</h2>
+		<p><!--TODO-->This will be a collection of Bootstrap card-columns showing snippets of code. I want each card to expand to a modal with more detail and an option to view the file on GitHub.</p>
+		<p>I may need to either build a few more projects, or pick specific useful elements to highlight.</p>
+	</div> <!--backend-->
+
+	<div class="container-fluid" id="experience">
+		<!--	TODO: This section needs more work to be fully mobile-responsive	-->
+		<div class="row">
+			<div class="col-2 pe-0" id="skill-list">
+				<h2 class="container-fluid py-0 border-end border-top border-2 border-secondary text-end">Skills</h2>
+				<div class="container-fluid ps-1 border-start border-2 border-secondary">
+					<p>Tech</p>
+					<ul class="list-unstyled">
+						<li>HTML5/CSS</li>
+						<li>Bootstrap4.6/5.0</li>
+						<li>JavaScript</li>
+						<ul class="sublist">
+							<li>DOM manipulation</li>
+							<li>React</li>
+							<li>React-Bootstrap</li>
+							<li>Node.js</li>
+						</ul>
+						<li>MySQL/SQLite</li>
+						<li>Git/GitHub</li>
+						<li>Asana</li>
+						<li>Java</li>
+						<ul class="sublist">
+							<li>Gradle</li>
+							<li>Maven</li>
+							<li>REST via Spring</li>
+							<li>Android</li>
+							<ul class="sublist">
+								<li>Jetpack</li>
+								<li>ReactiveX</li>
+								<li>Room</li>
+							</ul>
+							<li>Unit Testing</li>
+							<li>Debugging</li>
+						</ul>
+					</ul>
+				</div>
+
+				<div class="container-fluid border-end border-2 border-secondary">
+					<p>Project Work</p>
+					<ul class="list-unstyled">
+						<li>Entity Relationship Diagramming</li>
+						<li>Wireframing</li>
+						<li>Agile Development</li>
+						<li>Remote Collaboration</li>
+						<li>Iterative Design</li>
+					</ul>
+				</div>
+
+				<div class="container-fluid border-start border-bottom border-2 border-secondary">
+					<p>Personal</p>
+					<ul class="list-unstyled">
+						<li>Critical & Creative Thinking</li>
+						<li>Attention to Detail</li>
+						<li>Self-guided Learning</li>
+						<li>Service Leadership</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<h2 class="container-fluid">Experiences</h2>
+
+				<div class="container ms-4">
+					<h3>Deep Dive Coding</h3>
+					<p><!--TODO-->This is being updated with Fullstack info.</p>
+					<p>I started learning Java in January 2020. I was confident that I would at least enjoy coding - it puts a lot of the interests that drive my hobbies to work together - but I was surprised to find how engrossing the process is for me. I picked the basics up very quickly, pushed myself with exercises on CodingBat, and within a few weeks I was helping my classmates when our instructors were busy. I organized weekly study sessions at the CNM library and created a collaborative learning community to support all of us.</p>
+
+					<p>Thanks to Deep Dive, I am proficient with IntelliJ IDE and Java SE 8+. I have experience with JUnit4 and 5 testing , relational database design using MySQL queries, RESTful services, Android ViewModel architecture incorporating ReactiveX tasks, and more, which you can examine above. I am also familiar with Scrum and Agile development methods.</p>
+
+					<p>COVID-19 gave me a crash course in remote work. I led my team in daily check-ins and planning calls, and managed our workflow by creating an Asana project to organize ideas and assign tasks. We leaned hard into the use of GitHub branches and learned as we worked. Without my instructors in the next room to answer questions, I did a lot of independent research to fix bugs and work out implementations.</p>
+
+					<p>Since then, I've continued to refine my Java skills and develop my personal Android project: Choppit is at the stage of minimum viability as an Android app that scrapes HTML and generates simplified recipes with no ads, videos, life stories, etc. My remaining design goals are significantly more complex than what I've accomplished, so I'm mostly content to pause development here.</p>
+
+					<p>In April of 2021 I decided to go back for round two at Deep Dive; I'm currently working through a fully remote session of the Fullstack web development program. I've enjoyed adding JavaScript's functional programming style to Java, and working with frontend systems like CSS Grids and React-Bootstrap is an interesting contrast to Android Fragments. I've gotten much more comfortable with the minutiae of tools Slack, Git and Asana.</p>
+
+					<p>My next project will be to branch off Choppit mobile and rebuild it as a mini-monolith server app for personal use; a few pages of Bootstrap UI and some JSON should get it to a point where it can be deployed on a desktop computer and accessed locally from any device.</p>
+
+				</div>
+				<div class="container ms-4">
+					<h3>Verizon Wireless</h3>
+					<p>I worked at a Verizon Wireless call center from 2010 to 2018. The majority of my experience is in tech support; the Albuquerque center was among the first to support complex services like international roaming, home/mobile internet devices, and network extenders (micro cell towers that connect to the Verizon network through a wired internet connection) on top of all the changes in cell phone technology over the last decade. I saw each of these as an opportunity to develop expertise with each new set of procedures, challenges and work-arounds as fast as possible.</p>
+
+					<p>I got my A+ certification to move up in Tech Support, and my Network+ because it looked cool. I prided myself on the ability to guide even the least confident and most tech-phobic customers through their router admin screens to configure DHCP reservations, port forwarding, occasionally even QoS and DMZ settings - without being able to see their computer screen. Through these experiences, I became highly skilled at applying research, documentation and critical thinking to problems. I also perfected the ability to communicate between laypersons and technical experts.</p>
+
+					<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model* guided me in creating and iteratively improving learner-focused training modules for everything from resolving usage disputes to building trust.
+						<br/>
+						*Analysis, Design, Development, Implementation, Evaluation.</p>
+				</div>
+			</div>
+		</div>
+	</div> <!--experience-->
+
+	<div class="container" id="contact">
+		<h2>Contact me</h2>
+		<p>This section will contain a simple contact form, my professional email address, and additional links to my
+			professional profiles on LinkedIn and GitHub. (These will also be linked to in the footer site wide via
+			icons.)</p>
+	</div>
+
+	<!--Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+	        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+	        crossorigin="anonymous"></script>
+</body>
+</html>

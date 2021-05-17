@@ -13,13 +13,31 @@ div[id*="card-overlay"] {
     opacity: 85%;
 }
 
+div[id*="card-overlay"] :hover {
+    /*Do something neat*/
+}
+
 div[id*="frontend"] {
     margin: 2em 0;
 }
 
+
 div[id*="front-card"] {
     max-height: 16em;
     overflow: hidden;
+}
+
+.js-holder {
+    background-color: #F0DB4F;
+}
+
+.bootstrap-holder {
+    background-color: #563d7c;
+}
+
+.frontend-logo {
+    vertical-align:bottom;
+    border:0;
 }
 #skill-list {
     min-width: 135px;
