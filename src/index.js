@@ -7,8 +7,7 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 require('dotenv').config()
 const Mailgun = require("mailgun-js")
 
-const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
-
+const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain:process.env.MAILGUN_DOMAIN})
 const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
     check("email", "Please provide a valid email").isEmail(),
@@ -54,27 +53,30 @@ const handlePostRequest = (request, response, next) => {
         const currentError = errors.array()[0]
         return response.send(Buffer.from(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`))
     }
-
-    const {email, subject, name, message} = request.body;
+    const {email, subject, name, message} = request.body
 
     const mailgunData = {
-        to:process.env.MAIL_RECIPIENT,
-        from:`${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
-        subject: `${email}: ${subject}`,
+        to: process.env.MAIL_RECIPIENT,
+        from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+        subject: `${email} : ${subject}`,
         text: `${message}`
     }
-    mailgun.messages().send(mailgunData, (error) => {
+    mailgun.messages().send(mailgunData, (error, body) => {
+        console.log(mailgunData)
+        console.log(body)
         if (error) {
-            return (response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh
-                snap!</strong> Unable to send email error with email sender</div>`)))
+            console.log("error")
+            return (response.send(Buffer.from(`<div class='col-3 alert alert-danger' role='alert'><strong>Oh
+                snap!</strong> Unable to send email.  It's not you, it's me. <p>${error}</p></div>`)))
+        } else {
+            return response.send(Buffer.from("<div class='col-3 alert alert-success' role='alert'>Email successfully sent.</div>"))
         }
     })
 }
 
 indexRoute.route("/")
     .get(handleGetRequest)
-    .post(recaptcha.middleware.verify ,validation, handlePostRequest)
-
+    .post(recaptcha.middleware.verify, validation, handlePostRequest)
 
 app.use("/apis", indexRoute)
 
