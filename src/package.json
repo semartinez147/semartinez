@@ -1,19 +1,21 @@
 {
   "name": "semartinez.com",
   "version": "0.0.1",
-  "description": "contact form",
+  "description": "personal website",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "@popperjs/core": "^2.9.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-recaptcha": "^5.0.2",
     "express-validator": "^6.5.0",
     "mailgun-js": "^0.22.0",
+    "netmask": "^2.0.1",
     "morgan": "^1.9.1"
   }
 }

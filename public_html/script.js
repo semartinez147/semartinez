@@ -1,1 +1,0 @@
-document.getElementById("frontend-lit").addEventListener("hover", event => {});
