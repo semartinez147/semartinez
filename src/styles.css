@@ -1,0 +1,53 @@
+/*#welcome {*/
+/*    background-image: url("./assets/cranes-banner.jpg");*/
+/*    background-position: center;*/
+/*}*/
+
+#headshot {
+    max-width: 250px;
+}
+body {
+    background: linear-gradient(rgb(211, 247, 255), rgb(183, 189, 188));
+}
+
+/*Selects all div with IDs that contain "card overlay"*/
+div[id*="card-overlay"] {
+    height: min-content;
+    opacity: 85%;
+}
+
+div[id*="card-overlay"] :hover {
+    /*Do something neat*/
+}
+
+#nav {
+    background: rgba(255, 255, 255, 0);
+
+}
+
+.portfolio {
+    margin: 2em 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255,255,255), rgb(255,255,255), rgb(255,255,255), rgb(255,255,255), rgba(255, 255, 255, 0));
+}
+
+div[id*="front-card"] {
+    max-height: 16em;
+    overflow: hidden;
+}
+
+.frontend-logo {
+    vertical-align:bottom;
+    border:0;
+}
+p.skill-title {
+    text-align: center;
+    font-weight: bold;
+}
+#skill-list {
+    min-width: 135px;
+
+}
+.sublist {
+    list-style: "• ";
+}
+
