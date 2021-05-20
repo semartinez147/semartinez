@@ -1,6 +1,8 @@
 {
   "name": "semartinez.com",
   "version": "0.0.1",
+  "repository": "secret for now",
+  "license": "MIT",
   "description": "personal website",
   "main": "index.js",
   "scripts": {
