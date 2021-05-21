@@ -1,3 +1,3 @@
 FROM nginx:alpine
-WORKDIR /usrshare/nginx/html
+WORKDIR /usr/share/nginx/html
 RUN rm -rf *

@@ -1,18 +1,19 @@
 version: "3"
+
 services:
   backend:
     build: ./src
-    container_name: "backend"
+    container_name: backend
     env_file:
       - ./src/.env
   frontend:
-    container_name: 'frontend'
     build: ./public_html
     ports:
       - "80:80"
+      - "443:443"
     volumes:
-      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./production.conf:/etc/nginx/conf.d/default.conf
       - ./public_html:/usr/share/nginx/html
-
-
-# https://files.slack.com/files-pri/T053NFY3R-F01TH0KTUBT/pwp-3-containerization.mp4 resume at 58:29
+      - ./dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
+      - /docker-volumes/pwp/etc/letsencrypt/live/semartinez.com/fullchain.pem:/etc/letsencrypt/live/semartinez.com/fullchain.pem
+      - /docker-volumes/pwp/etc/letsencrypt/live/semartinez.com/privkey.pem:/etc/letsencrypt/live/semartinez.com/privkey.pem
