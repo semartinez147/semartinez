@@ -3,6 +3,13 @@
 /*    background-position: center;*/
 /*}*/
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -8%;
+    visibility: hidden;
+}
+
 #headshot {
     max-width: 250px;
 }
