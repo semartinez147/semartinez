@@ -17,6 +17,6 @@ RUN chown node:node ./
 USER node
 
 # COPY
-COPY package.json package-lock.json index.js ./
+COPY ../package.json package-lock.json index.js ./
 RUN npm install --no-optional && npm cache clean --force
 CMD ["npm", "run", "dev"]
