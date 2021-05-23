@@ -7,14 +7,14 @@
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-<!--	Only needed if customizing Bootstrap:
-	<link rel="stylesheet" href="../scss/custom.css"> -->
-	<link rel="stylesheet" href="../src/styles.css">
+	<!--	Only needed if customizing Bootstrap:
+		<link rel="stylesheet" href="../scss/custom.css"> -->
+	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" href="./assets/favicon.ico">
 	<title>S E Martinez</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
 		<div class="container-fluid" id="nav">
 			<a class="navbar-brand"><img src="assets/logo-white.svg" height="50" id="logo" alt="logo"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,11 +43,6 @@
 			</div>
 		</div>
 	</nav> <!--navbar-->
-	<div class="container py-lg-4">
-		<div class="container py-lg-4">
-
-		</div>
-	</div>
 	<section>
 		<a class="anchor" id="anchor-welcome"></a>
 		<div class="container-fluid">
@@ -77,10 +72,10 @@
 		<a class="anchor" id="anchor-work"></a>
 		<div class="container text-center"><h5 class="display-4 text-black-50">Fullstack Work</h5></div>
 
-		<div class="container-fluid pb-4" id="portfolio-js">
-			<div class="card border-0 mb-3">
+		<div class="container-fluid pb-4 pe-0" id="portfolio-js">
+			<div class="card border-0 mb-3 ms-4">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-center p-1">
+					<div class="col-auto d-flex ps-2 align-items-center">
 						<img src="assets/js-logo.png" alt="JavaScript logo" class="frontend-logo rounded-circle">
 					</div>
 					<div class="col">
@@ -94,7 +89,7 @@
 											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 									</div>
 									<div class="col-auto">
-										<a href="https://github.com/semartinez147/js-events-challenge" target="_blank"><i class="fab fa-github"></i><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+										<a href="https://github.com/semartinez147/js-events-challenge" target="_blank"><img src="./assets/github.png" alt="github icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
 									</div>
 								</div>
 							</div>
@@ -104,10 +99,10 @@
 			</div>
 		</div>
 
-		<div class="container-fluid pb-4" id="portfolio-bootstrap">
-			<div class="card border-0 mb-3">
+		<div class="container-fluid pb-4 pe-0" id="portfolio-bootstrap">
+			<div class="card border-0 mb-3 ms-4">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-center p-1">
+					<div class="col-auto d-flex ps-2 align-items-center">
 						<img src="assets/boot-logo.png" alt="Bootstrap logo" class="frontend-logo rounded-circle ">
 					</div>
 					<div class="col">
@@ -121,7 +116,7 @@
 											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 									</div>
 									<div class="col-auto">
-										<img src="./assets/github.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+										<a href="https://github.com/semartinez147/bootstrap-challenge" target="_blank"><img src="./assets/github.png" alt="github icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
 									</div>
 
 								</div>
@@ -131,24 +126,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid pb-4" id="portfolio-react">
-			<div class="card border-0 mb-3">
+		<div class="container-fluid pb-4 pe-0" id="portfolio-react">
+			<div class="card border-0 mb-3 ms-4">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-center p-1">
+					<div class="col-auto d-flex ps-2 align-items-center">
 						<img src="assets/react-logo.png" alt="React logo" class="frontend-logo rounded-circle ">
 					</div>
 					<div class="col">
 						<div class="card-body">
-							<h5 class="card-title">React.js Layout</h5>
-							<p class="card-text">A two-page React site using synthetic routes. </p>
+							<h5 class="card-title">React-Bootstrap Layout</h5>
+							<p class="card-text">A fully responsive two-page React site using synthetic routes. In addition to basic components, I used <code>props</code> and <code>map()</code> to build cards from an object array.</p>
 							<div class="container">
 								<div class="row">
-									<div class="col-auto">
-										<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
+									<!--TODO: figure out how to link to this-->
+									<!--<div class="col-auto">
+										<a href=" " target="_blank">
 											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
-									</div>
+									</div>-->
 									<div class="col-auto pe-0 pe-sm-1">
-										<img src="./assets/github.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+										<a href="https://github.com/semartinez147/bootstrap-challenge" target="_blank"><img src="./assets/github.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
 									</div>
 								</div>
 							</div>
@@ -156,40 +152,27 @@
 					</div>
 				</div>
 			</div>
-			<!--
-							<div class="container-fluid px-0" id="frontend4">
-								<div class="card bg-dark text-white g-0 mx-0 rounded-0 border-0" id="front-card4">
-									<img src="assets/cranes.jpg" class="card-img rounded-0 img-fluid" alt="background image: pile of origami cranes">
-									<div class="card-img-overlay row justify-content-center">
-										<div class="col-auto col-sm-6 bg-secondary rounded align-self-center" id="card-overlay4"><h5
-												class="card-title">Frontend Portfolio Item</h5>
-											<p class="card-text mb-2">This will be another example of my front end work.</p></div>
-									</div>
-								</div>
-							</div>
-					-->
 		</div> <!--frontend-->
 
-		<div class="container text-center" id="portfolio-java">
+		<div class="container text-center" id="title-java">
 			<h5 class="display-4 text-black-50">Java Projects</h5>
 		</div>
 
-		<div class="container-fluid pb-4" id="java">
-				<div class="card border-0 mb-3">
-					<div class="row g-0">
-						<div class="col-auto d-flex align-items-center p-1">
-							<img src="assets/java-logo.png" alt="Java logo" class="frontend-logo rounded-circle ">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">Java Gallery</h5>
-								<p class="card-text">This content will be migrated from the portfolio site I built in 2020. It isn't pretty (I was learning Java, not Fullstack), but feel free to take a look:</p>
-								<div class="container">
-									<div class="row">
-										<div class="col-auto">
-											<a href="https://semartinez.github.io" target="_blank">
-												<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
-										</div>
+		<div class="container-fluid pb-4 pe-0" id="portfolio-java">
+			<div class="card border-0 mb-3 ms-4">
+				<div class="row g-0">
+					<div class="col-auto d-flex ps-2 align-items-center">
+						<img src="assets/java-logo.png" alt="Java logo" class="frontend-logo rounded-circle ">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">Java Gallery</h5>
+							<p class="card-text">This content will be migrated from the portfolio site I built in 2020. It isn't pretty (I was learning Java, not Fullstack), but feel free to take a look:</p>
+							<div class="container">
+								<div class="row">
+									<div class="col-auto">
+										<a href="https://semartinez.github.io" target="_blank">
+											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 									</div>
 								</div>
 							</div>
@@ -197,11 +180,12 @@
 					</div>
 				</div>
 			</div>
-		<div class="container-fluid pb-4" id="portfolio-android">
-			<div class="card border-0 mb-3">
+		</div>
+		<div class="container-fluid pb-4 pe-0" id="portfolio-android">
+			<div class="card border-0 mb-3 ms-4">
 				<div class="row g-0">
-					<div class="col-auto d-flex align-items-center p-1">
-						<img src="assets/android-logo.png" alt="Android logo" class="frontend-logo rounded-circle ">
+					<div class="col-auto d-flex ps-2 align-items-center">
+						<img src="assets/android-logo.png" alt="Android logo" height="150" class="frontend-logo rounded-circle ">
 					</div>
 					<div class="col">
 						<div class="card-body">
@@ -332,9 +316,7 @@
 
 						<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model (Analysis, Design, Development, Implementation, Evaluation) guided me in creating and iteratively improving learner-focused training modules for everything from trust-building to deductive troubleshooting.
 					</div>
-				</div>
-				<div class="container-fluid border-dark border-bottom border-start border-2 py-4 offset-n4 sm-border">
-
+					<div class="container-fluid border-dark border-bottom border-start border-2 py-4 offset-n4 sm-border"></div>
 				</div>
 			</div>
 		</div> <!--experience--></section>
@@ -346,43 +328,53 @@
 			<h2 class="display-4 text-black-50 text-center">Contact Me</h2>
 			<!--suppress HtmlUnknownTarget -->
 			<form action="./apis/" id="contact" method="post" novalidate>
-				<div class="form-group">
-					<label for="name">Name</label>
-					<div class="input-group">
-						<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<div class="input-group">
+								<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<div class="input-group">
+								<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<div class="input-group">
+								<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="email">Email</label>
-					<div class="input-group">
-						<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="subject">Subject</label>
-					<div class="input-group">
-						<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="message">Message</label>
-					<div class="input-group">
-					<textarea class="form-control" id="message" maxlength="2000" name="message"
-					          placeholder="Your Message (2000 characters max)" required
-					          rows="5"></textarea>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="message">Message</label>
+							<div class="input-group">
+        					<textarea class="form-control" id="message" maxlength="2000" name="message"
+					                  placeholder="Your Message (2000 characters max)" required
+					                  rows="5"></textarea>
+							</div>
+						</div>
+
 					</div>
 				</div>
 				<!-- Make sure to add site key provided by google recaptcha -->
-				<div class="g-recaptcha" data-sitekey="6Lf84dMaAAAAAGaV0DNzPAA28TgfOscvSS0TX4dH">
+				<div class="row mt-2">
+				    <div class="col-lg-6">
+				        <div class="g-recaptcha" data-sitekey="6Lf84dMaAAAAAGaV0DNzPAA28TgfOscvSS0TX4dH">
+        				</div>
+        				<button class="btn btn-info" type="submit">Submit</button>
+        				<button class="btn btn-default" type="reset">Reset</button>
+				    </div>
+					<div class="col-lg-6" id="output-area"><!--TODO: Fix alignment of output divs--></div>
 				</div>
-				<button class="btn btn-info" type="submit">Submit</button>
-				<button class="btn btn-default" type="reset">Reset</button>
 			</form>
 			<!-- END CONTACT FORM-->
 
-			<div class="container">
-				<div class="row" id="output-area"></div>
-			</div>
+
 
 		</div>
 	</section>
