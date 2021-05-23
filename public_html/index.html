@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-	      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+	<link href="../src/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--	<link rel="stylesheet" href="../scss/custom.css">-->
 	<link rel="stylesheet" href="../src/styles.css">
 	<link rel="icon" href="./assets/favicon.ico">
 	<title>S E Martinez</title>
@@ -24,19 +24,19 @@
 			<div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link" href="#welcome">Welcome</a>
+						<a class="nav-link" href="#anchor-welcome">Welcome</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#work">Work</a>
+						<a class="nav-link" href="#anchor-work">Work</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#skill-title">Skills</a>
+						<a class="nav-link" href="#anchor-skills">Skills</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#experience-title">Experiences</a>
+						<a class="nav-link" href="#anchor-experience">Experiences</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact-me">Contact</a>
+						<a class="nav-link" href="#anchor-contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -48,10 +48,10 @@
 		</div>
 	</div>
 	<section>
-		<a class="anchor" id="welcome"></a>
+		<a class="anchor" id="anchor-welcome"></a>
 		<div class="container-fluid">
 			<div class="row my-1 text-center">
-				<h2 class="display-4">Samuel E Martinez</h2>
+				<h2 class="display-4" id="my-name">Samuel E Martinez</h2>
 			</div>
 			<div class="row justify-content-center align-items-lg-center">
 				<div class="col-6 col-lg-4 order-2 order-lg-2">
@@ -67,14 +67,16 @@
 			</div>
 		</div>
 	</section> <!--welcome-->
+
 	<div class="container py-2 py-lg-4">
 		<div class="container py-2 py-lg-4"></div>
 	</div>
+
 	<section class="pt-1">
-		<a class="anchor" id="work"></a>
+		<a class="anchor" id="anchor-work"></a>
 		<div class="container text-center"><h5 class="display-4 text-black-50">Fullstack Work</h5></div>
 
-		<div class="container pb-4" id="frontend-js">
+		<div class="container-fluid pb-4" id="portfolio-js">
 			<div class="card border-0 mb-3">
 				<div class="row g-0">
 					<div class="col-auto d-flex align-items-center p-1">
@@ -101,7 +103,7 @@
 			</div>
 		</div>
 
-		<div class="container pb-4" id="frontend-bootstrap">
+		<div class="container-fluid pb-4" id="portfolio-bootstrap">
 			<div class="card border-0 mb-3">
 				<div class="row g-0">
 					<div class="col-auto d-flex align-items-center p-1">
@@ -128,7 +130,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container pb-4" id="frontend-react">
+		<div class="container-fluid pb-4" id="portfolio-react">
 			<div class="card border-0 mb-3">
 				<div class="row g-0">
 					<div class="col-auto d-flex align-items-center p-1">
@@ -167,38 +169,11 @@
 					-->
 		</div> <!--frontend-->
 
-		<div class="container" id="backend">
-			<div class="container text-center"><h5 class="display-4 text-black-50">Java Projects</h5></div>
-			<!--
-					<div class="container pb-4" id="android">
-						<div class="card border-0 mb-3">
-							<div class="row g-0">
-								<div class="col-auto d-flex align-items-center p-1">
-									<img src="assets/android-logo.png" alt="Android logo" class="frontend-logo rounded-circle ">
-								</div>
-								<div class="col">
-									<div class="card-body">
-										<h5 class="card-title">Android UI</h5>
-										<p class="card-text">Get screenshots of Choppit</p>
-										<div class="container">
-											<div class="row">
-												<div class="col-auto pe-0 pe-sm-1">
-													<img src="./assets/github.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
-												</div>
-												<div class="col-auto">
-													<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
-														<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			-->
+		<div class="container text-center" id="portfolio-java">
+			<h5 class="display-4 text-black-50">Java Projects</h5>
+		</div>
 
-			<div class="container pb-4" id="java">
+		<div class="container-fluid pb-4" id="java">
 				<div class="card border-0 mb-3">
 					<div class="row g-0">
 						<div class="col-auto d-flex align-items-center p-1">
@@ -211,7 +186,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-auto">
-											<a href="https://semartinex.github.io" target="_blank">
+											<a href="https://semartinez.github.io" target="_blank">
 												<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 										</div>
 									</div>
@@ -221,17 +196,45 @@
 					</div>
 				</div>
 			</div>
+		<div class="container-fluid pb-4" id="portfolio-android">
+			<div class="card border-0 mb-3">
+				<div class="row g-0">
+					<div class="col-auto d-flex align-items-center p-1">
+						<img src="assets/android-logo.png" alt="Android logo" class="frontend-logo rounded-circle ">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<h5 class="card-title">Android UI</h5>
+							<p class="card-text">This card will have screenshots of Choppit, my solo Android project</p>
+							<div class="container">
+								<div class="row">
+									<div class="col-auto pe-0 pe-sm-1">
+										<img src="./assets/github.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> View code</h6></a>
+									</div>
+									<div class="col-auto">
+										<a href="https://ddc-web-student.cnm.edu/~smartinez495/js-events-challenge/index.html" target="_blank">
+											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		</div> <!--backend-->
+		<!--backend-->
 	</section>
-
 	<section>
-		<a class="anchor" id="experience"></a>
 		<div class="container-fluid">
 			<!--	TODO: This section needs more work to be fully mobile-responsive	-->
+			<div class="row my-1 text-center">
+				<h2 class="display-4 text-black-50" id="more">More About Me</h2>
+			</div>
 			<div class="row m-0">
 				<div class="col-lg-3" id="skill-list">
-					<h2 class="container-fluid py-0 text-end text-black-50" id="skill-title">Skills</h2>
+					<a class="anchor" id="anchor-skills"></a>
+					<h2 class="container-fluid py-0 border-top border-2  border-end border-dark text-center text-lg-end text-black-50" id="skill-title">Skills</h2>
 					<div class="row flex-row">
 						<div class="col">
 							<div class="container-fluid" id="skills-tech">
@@ -288,11 +291,15 @@
 							</div>
 						</div>
 					</div>
+					<div class="container-fluid border-dark border-bottom border-start border-2 py-4 offset-n4 sm-border">
+
+					</div>
 				</div>
 				<div class="col">
-					<h2 class="container-fluid text-center text-lg-end text-black-50" id="experience-title">Experiences</h2>
+					<a class="anchor" id="anchor-experience"></a>
+					<h2 class="container-fluid text-center text-lg-end border-top border-2  border-end border-dark text-black-50" id="experience-title">Experience</h2>
 
-					<div class="container-fluid ms-4">
+					<div class="container-fluid ms-lg-4">
 						<h3>Deep Dive Coding: Java + Android(2020), Fullstack Web (2021)</h3>
 						<!--					<p>I started learning Java in January 2020. I was confident that I would at least enjoy coding - it puts a lot of the interests that drive my hobbies to work together - but I was surprised to find how engrossing the process is for me. I picked the basics up very quickly, pushed myself with exercises on CodingBat, and within a few weeks I was helping my classmates when our instructors were busy. I organized weekly study sessions at the CNM library and created a collaborative learning community to support all of us.</p>
 
@@ -316,25 +323,26 @@
 						<p>My next project after completing Deep Dive Fullstack will be to take the core Java of Choppit, add in the kind of Spring endpoints we built for our Scavengr server, and rework the UI in React so that it can be deployed as a standalone web app.</p>
 
 					</div>
-					<div class="container ms-4">
+					<div class="container-fluid ms-lg-4">
 						<h3>Verizon Wireless</h3>
 						<p>I worked at a Verizon Wireless call center from 2010 to 2018. The majority of my experience is in tech support; the Albuquerque center was among the first to support complex services like international roaming, home/mobile internet devices, and network extenders (micro cell towers that connect to the Verizon network through a wired internet connection) on top of all the changes in cell phone technology over the last decade. I saw each of these as an opportunity to develop expertise with each new set of procedures, challenges and work-arounds as fast as possible.</p>
 
 						<p>I got my A+ certification to move up in Tech Support, and my Network+ because it looked cool. I prided myself on the ability to guide even the least confident and most tech-phobic customers through their router admin screens to configure DHCP reservations, port forwarding, occasionally even QoS and DMZ settings - without being able to see their computer screen. Through these experiences, I became highly skilled at applying research, documentation and critical thinking to problems. I also perfected the ability to communicate between laypersons and technical experts.</p>
 
-						<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model* guided me in creating and iteratively improving learner-focused training modules for everything from resolving usage disputes to building trust.
-							<br/>
-							*Analysis, Design, Development, Implementation, Evaluation.</p>
+						<p>In my last four years at Verizon I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of that time. I also used Verizon’s tuition assistance program to earn a Master’s in Adult Education, with an emphasis in professional learning and development. I discovered a surprisingly deep overlap between teaching and leadership, which helped me motivate my teams to work harder and smarter, taking pride and initiative in their personal and professional growth. The ADDIE training model (Analysis, Design, Development, Implementation, Evaluation) guided me in creating and iteratively improving learner-focused training modules for everything from trust-building to deductive troubleshooting.
 					</div>
+				</div>
+				<div class="container-fluid border-dark border-bottom border-start border-2 py-4 offset-n4 sm-border">
+
 				</div>
 			</div>
 		</div> <!--experience--></section>
 
 
 	<section>
-		<a class="anchor" id="contact-me"></a>
+		<a class="anchor" id="anchor-contact"></a>
 		<div class="container">
-			<h2>Contact Me</h2>
+			<h2 class="display-4 text-black-50 text-center">Contact Me</h2>
 			<!--suppress HtmlUnknownTarget -->
 			<form action="./apis/" id="contact" method="post" novalidate>
 				<div class="form-group">

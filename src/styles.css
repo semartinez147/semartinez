@@ -1,13 +1,23 @@
-/*#welcome {*/
-/*    background-image: url("./assets/cranes-banner.jpg");*/
-/*    background-position: center;*/
-/*}*/
+
+
+body {
+    background: linear-gradient(rgb(211, 247, 255), rgb(183, 189, 188));
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -76px;
+    visibility: hidden;
+}
 
 #headshot {
     max-width: 250px;
 }
-body {
-    background: linear-gradient(rgb(211, 247, 255), rgb(183, 189, 188));
+
+.sm-border{
+    position: relative;
+    top: -48px;
 }
 
 /*Selects all div with IDs that contain "card overlay"*/
