@@ -333,19 +333,19 @@
 						<div class="form-group">
 							<label for="name">Name</label>
 							<div class="input-group">
-								<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+								<input class="form-control" id="name" name="name" aria-label="name field" placeholder="Your Name" type="text">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="email">Email</label>
 							<div class="input-group">
-								<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+								<input class="form-control" id="email" name="email" aria-label="email field" placeholder="Your Email" type="email">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="subject">Subject</label>
 							<div class="input-group">
-								<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+								<input class="form-control" id="subject" aria-label="subject field" name="subject" placeholder="Subject" type="text">
 							</div>
 						</div>
 					</div>
@@ -353,7 +353,7 @@
 						<div class="form-group">
 							<label for="message">Message</label>
 							<div class="input-group">
-        					<textarea class="form-control" id="message" maxlength="2000" name="message"
+        					<textarea class="form-control" id="message" maxlength="2000" name="message" aria-label="message field"
 					                  placeholder="Your Message (2000 characters max)" required
 					                  rows="5"></textarea>
 							</div>
@@ -369,7 +369,7 @@
         				<button class="btn btn-info" type="submit">Submit</button>
         				<button class="btn btn-default" type="reset">Reset</button>
 				    </div>
-					<div class="col-lg-6" id="output-area"><!--TODO: Fix alignment of output divs--></div>
+					<div class="col-lg-6" id="output-area"><!--TODO: Fix alignment of output divs --></div>
 				</div>
 			</form>
 			<!-- END CONTACT FORM-->
