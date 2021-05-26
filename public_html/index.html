@@ -14,7 +14,7 @@
 	<title>S E Martinez</title>
 </head>
 <body id="body">
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top rounded-bottom">
 		<div class="container-fluid" id="nav">
 			<a class="navbar-brand"><img src="assets/logo-white.svg" height="50" id="logo" alt="logo"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,21 +22,21 @@
 			        aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
+					<li class="nav-item px-sm-2 px-lg-4">
 						<a class="nav-link" href="#anchor-welcome">Welcome</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item px-sm-2 px-lg-4">
 						<a class="nav-link" href="#anchor-work">Work</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item px-sm-2 px-lg-4">
 						<a class="nav-link" href="#anchor-skills">Skills</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item px-sm-2 px-lg-4">
 						<a class="nav-link" href="#anchor-experience">Experiences</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item px-sm-2 px-lg-4">
 						<a class="nav-link" href="#anchor-contact">Contact</a>
 					</li>
 				</ul>
@@ -167,11 +167,11 @@
 					<div class="col">
 						<div class="card-body">
 							<h5 class="card-title">Java Gallery</h5>
-							<p class="card-text">This content will be migrated from the portfolio site I built in 2020. It isn't pretty (I was learning Java, not Fullstack), but feel free to take a look:</p>
+							<p class="card-text">A handful of Java implementations taken from class assignments and some independent exercises.  Outside of class I did a lot of work on <a href="https://www.codingbat.com" target="_blank">Codingbat</a> and CodeWars to refine my skills and make thinking in Java feel more natural.</p>
 							<div class="container">
 								<div class="row">
 									<div class="col-auto">
-										<a href="https://semartinez.github.io" target="_blank">
+										<a href="https://semartinez147.github.io" target="_blank">
 											<img src="./assets/globe.png" alt="globe icon" width="15"><h6 class="card-subtitle mb-2 text-muted d-inline"> Visit page</h6></a>
 									</div>
 								</div>
@@ -185,12 +185,12 @@
 			<div class="card border-0 mb-3 ms-4">
 				<div class="row g-0">
 					<div class="col-auto d-flex ps-2 align-items-center">
-						<img src="assets/android-logo.png" alt="Android logo" height="150" class="frontend-logo rounded-circle ">
+						<img src="assets/choppit.png" alt="Choppit logo" height="150" class="frontend-logo rounded-circle ">
 					</div>
 					<div class="col">
 						<div class="card-body">
 							<h5 class="card-title">Choppit</h5>
-							<p class="card-text">I built this app up to the point of minimum viability over the course of 2020. The UI includes AndroidX libraries, View & Data Binding, and a handful of customized RecyclerAdapters. Behind the scenes, a ViewModel serves data from a Room database and a machine assembled from ReactiveX and the Jsoup library.</p>
+							<p class="card-text">I built this app up to the point of minimum viability over the course of 2020. The UI includes AndroidX libraries, View & Data Binding, and a handful of customized RecyclerAdapters. Behind the scenes, a ViewModel serves data from a Room database and a class assembled from ReactiveX and the Jsoup library processes cluttered HTML into simple, text-only recipes. </p>
 							<div class="container">
 								<div class="row">
 									<!--									<div class="col-auto pe-0 pe-sm-1">
@@ -276,8 +276,8 @@
 						<p>Verizon paid for A+ and Network+ certifications, as well as a Master's in Adult Education. After mastering tech support, I went through leadership training and worked as a Supervisor - either officially or ad hoc - for most of my last 4 years there.</p>
 					</div>
 					<div class="container-fluid border-dark border-bottom border-start border-2 py-4 offset-n4 sm-border"></div>
-				</div>
 			</div>
+		</div>
 		</div> <!--experience--></section>
 
 
@@ -313,7 +313,7 @@
 							<label for="message">Message</label>
 							<div class="input-group">
         					<textarea class="form-control" id="message" maxlength="2000" name="message" aria-label="message field"
-					                  placeholder="Your Message (2000 characters max)" required
+					                  placeholder="Request a copy of my resume, ask me a question, recommend a book or anything else (2000 characters max)" required
 					                  rows="5"></textarea>
 							</div>
 						</div>
@@ -337,8 +337,8 @@
 		</div>
 	</section>
 	<footer class="mt-4 pt-4">
-		<div class="container justify-content-around text-center">
-			<div class="row bg-dark text-light rounded-top py-2">
+		<div class="container-fluid justify-content-around text-center">
+			<div class="row bg-dark text-light rounded-top py-2 px-3">
 <!--				<div class="col">-->
 <!--					<p>Find me online:</p>-->
 <!--				</div>-->
