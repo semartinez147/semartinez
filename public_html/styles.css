@@ -1,6 +1,6 @@
 
 
-body {
+#body {
     background: linear-gradient(rgb(122, 159, 248), rgb(231, 231, 231));
 }
 
@@ -67,4 +67,5 @@ p.skill-title {
 .sublist {
     list-style: "• ";
 }
+
 
