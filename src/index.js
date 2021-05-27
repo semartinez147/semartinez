@@ -44,14 +44,15 @@ const handlePostRequest = (request, response, next) => {
     response.append("Access-Control-Allow-Origin", "*")
 
     if (request.recaptcha.error) {
-        return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`))
+        return response.send(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`)
     }
 
     const errors = validationResult(request)
 
     if(errors.isEmpty() === false) {
         const currentError = errors.array()[0]
-        return response.send(Buffer.from(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`))
+
+        return response.send(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`)
     }
     const {email, subject, name, message} = request.body
 
@@ -62,10 +63,7 @@ const handlePostRequest = (request, response, next) => {
         text: `${message}`
     }
     mailgun.messages().send(mailgunData, (error, body) => {
-        console.log(mailgunData)
-        console.log(body)
-        if (error) {
-            console.log("error")
+           if (error) {
             return (response.send(Buffer.from(`<div class='col-3 alert alert-danger' role='alert'><strong>Oh
                 snap!</strong> Unable to send email.  It's not you, it's me. <p>${error}</p></div>`)))
         } else {
