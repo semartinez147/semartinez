@@ -37,14 +37,23 @@ div[id*="card-overlay"] :hover {
 
 .card {
     margin: 2em 0;
+    background: white;
+    box-shadow: 0 0 5px 10px white;
+
+}
+
+[id*='portfolio']:nth-of-type(even) {
+    padding-left: 15vw;
+    padding-right: 0;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    background: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgb(255,255,255)8%,
-    rgb(255,255,255)92%,
-    rgba(255, 255, 255, 0));
+}
 
+[id*='portfolio']:nth-of-type(odd) {
+    padding-right: 10vw;
+    padding-left: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 div[id*="front-card"] {
